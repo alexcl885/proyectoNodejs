@@ -1,0 +1,22 @@
+extends ../templates/layout 
+block content
+
+        div 
+            table(border=1) 
+                thead 
+                    tr
+                        th id 
+                        th nombre 
+                        th apellido
+                tbody 
+                    each alumno in alumnos 
+                        tr  
+                            td= alumno.id
+                            td= alumno.nombre 
+                            td= alumno.apellido
+                            td
+                                a(href=`/alumnos/del/${alumno.id}`) Eliminar
+
+
+                p 
+                    a(href="/alumnos/add") AÑADIR NUEVO ALUMNO

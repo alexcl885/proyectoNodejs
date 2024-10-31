@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Saludo
+    body 
+        <!--Sirve para extraer codigo de otro fichero -->
+        include templates/header
+        div 
+            table(border=1) 
+                tbody 
+                    tr
+                        th(colspan=2)  Bienvenido 
+                    tr 
+                        td DNI 
+                        td #{dni} 
+                    tr 
+                        td Email 
+                        td #{email} 
+                    tr
+                        td Nombre 
+                        td #{nombre} 
+                    tr  
+                        td Apellido 
+                        td #{apellido} 
+                    tr 
+                        td Telefono 
+                        td #{telefono} 
+                    tr 
+

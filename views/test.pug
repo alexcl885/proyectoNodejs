@@ -1,0 +1,28 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Hola mundo
+    body
+        h1='HOLA MUNDO MY FRIEND'
+        h2 Esto es un titulo 2
+        h3 Esto es un titulo 3
+        div 
+            form(action="/destino",method="post") 
+                label(for="dni") Dni: 
+                input(type="text", name="dni")
+                br
+                label(for="email") Email: 
+                input(type="text", name="email")
+                br
+                label(for="nombre") Nombre: 
+                input(type="text", name="nombre")
+                br
+                label(for="apellido") Apellido:
+                input(type="text", name="apellido")
+                br
+                label(for="telefono") Telefono: 
+                input(type="text", name="telefono")
+                br
+                input(type="submit", value="enviar")

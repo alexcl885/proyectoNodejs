@@ -20,3 +20,15 @@ git init
 git add .
 git commit -m "Primer commit!"
 ```
+Creamos un archivo app.js con el esqueleto basico
+
+```javascript
+const express = require('express');
+const session = require('express-session');
+const mysql = require('mysql2');
+const bodyParser = require('body-parser');
+const path = require('path');
+
+```
+
+http://localhost:8001/hola?.nombre=juan&apellido=gutierrez

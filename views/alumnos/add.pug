@@ -1,0 +1,14 @@
+extends ../templates/layout
+block content 
+    h3 Anadir un nuevo alumno: 
+    div 
+        form(action="/destino",method="post") 
+            label(for="nombre") Nombre: 
+            input(type="text", name="nombre")
+            br
+            label(for="apellido") Apellido:
+            input(type="text", name="apellido")
+            br
+            label(for="enviar") Apellido:
+            input(type="submit", name="enviar") 
+    
